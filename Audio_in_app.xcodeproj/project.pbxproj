@@ -12,6 +12,8 @@
 		14AABBFC20F4AA7300FD8306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AABBFA20F4AA7300FD8306 /* Main.storyboard */; };
 		14AABBFE20F4AA7400FD8306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AABBFD20F4AA7400FD8306 /* Assets.xcassets */; };
 		14AABC0120F4AA7400FD8306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AABBFF20F4AA7400FD8306 /* LaunchScreen.storyboard */; };
+		14AABC0920F4AA8600FD8306 /* Bach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14AABC0820F4AA8600FD8306 /* Bach.mp3 */; };
+		14AABC0C20F4B95200FD8306 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AABC0B20F4B95200FD8306 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		14AABBFD20F4AA7400FD8306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14AABC0020F4AA7400FD8306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14AABC0220F4AA7400FD8306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AABC0820F4AA8600FD8306 /* Bach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bach.mp3; path = "/Users/FIFI/Library/Mobile Documents/com~apple~CloudDocs/Apps/Audio_in_app/Audio_in_app/Bach.mp3"; sourceTree = "<absolute>"; };
+		14AABC0B20F4B95200FD8306 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AABC0C20F4B95200FD8306 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				14AABBF520F4AA7300FD8306 /* Audio_in_app */,
 				14AABBF420F4AA7300FD8306 /* Products */,
+				14AABC0A20F4B95200FD8306 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +63,20 @@
 				14AABBF620F4AA7300FD8306 /* AppDelegate.swift */,
 				14AABBF820F4AA7300FD8306 /* ViewController.swift */,
 				14AABBFA20F4AA7300FD8306 /* Main.storyboard */,
+				14AABC0820F4AA8600FD8306 /* Bach.mp3 */,
 				14AABBFD20F4AA7400FD8306 /* Assets.xcassets */,
 				14AABBFF20F4AA7400FD8306 /* LaunchScreen.storyboard */,
 				14AABC0220F4AA7400FD8306 /* Info.plist */,
 			);
 			path = Audio_in_app;
+			sourceTree = "<group>";
+		};
+		14AABC0A20F4B95200FD8306 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14AABC0B20F4B95200FD8306 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AABC0920F4AA8600FD8306 /* Bach.mp3 in Resources */,
 				14AABC0120F4AA7400FD8306 /* LaunchScreen.storyboard in Resources */,
 				14AABBFE20F4AA7400FD8306 /* Assets.xcassets in Resources */,
 				14AABBFC20F4AA7300FD8306 /* Main.storyboard in Resources */,
