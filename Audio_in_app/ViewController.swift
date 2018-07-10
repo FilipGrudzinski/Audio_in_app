@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     
     @IBAction func slider(_ sender: Any) {
         
-        player.volume = sliderOutlet.value
+         player.volume = sliderOutlet.value
        
     
     }
@@ -61,11 +61,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //let audioPath = Bundle.main.path(forResource: "Bach", ofType: "mp3")
+        let audioPath = Bundle.main.path(forResource: "Bach", ofType: "mp3")
         
         do {
             
-           player = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Bach", ofType: "mp3")!))
+            player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+            
+            let audioSession = AVAudioSession.sharedInstance()
+            
+            do {
+                
+                try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+                
+            } catch {}
+            
     
             
         } catch {
